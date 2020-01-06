@@ -1,11 +1,12 @@
-command = ''
-
+command = ' '
 while command != 'bye'
-  puts command
   command = gets.chomp
+  puts command
 end
 
 puts 'come again soon!'
+
+
 # puts 1 > 2
 # puts 1 < 2
 #
