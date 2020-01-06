@@ -1,3 +1,11 @@
+command = ''
+
+while command != 'bye'
+  puts command
+  command = gets.chomp
+end
+
+puts 'come again soon!'
 # puts 1 > 2
 # puts 1 < 2
 #
@@ -22,21 +30,21 @@
 #   puts 'I really have to go, sorry!'
 # end
 
-puts 'Hello, and welcome to 7th grade English.'
-puts 'My name is Mrs. Gabbard. And your name is...?'
-
-name = gets.chomp
-
-if name == name.capitalize
-  puts 'Please take a seat, ' + name + '.'
-else
-  puts name + '? You mean ' + name. capitalize + ', right?'
-  puts 'You have to capitalize your name! Don\'t you know that?'
-  reply = gets.chomp
-
-  if reply.downcase == 'yes'
-    puts 'Hmph! Well, sit down.'
-  else
-    puts 'GET OUT!'
-  end
-end
+# puts 'Hello, and welcome to 7th grade English.'
+# puts 'My name is Mrs. Gabbard. And your name is...?'
+#
+# name = gets.chomp
+#
+# if name == name.capitalize
+#   puts 'Please take a seat, ' + name + '.'
+# else
+#   puts name + '? You mean ' + name. capitalize + ', right?'
+#   puts 'You have to capitalize your name! Don\'t you know that?'
+#   reply = gets.chomp
+#
+#   if reply.downcase == 'yes'
+#     puts 'Hmph! Well, sit down.'
+#   else
+#     puts 'GET OUT!'
+#   end
+# end
