@@ -6,14 +6,14 @@ iAmPurple = false
 iLikeFood = true
 iEatRocks = false
 
-# puts (iAmChris  and iLikeFood)
-# #true
-# puts (iLikeFood and iEatRocks)
-# #false
-# puts (iAmPurple and iLikeFood)
-# #false
-# puts (iAmPurple and iEatRocks)
+puts (iAmChris  and iLikeFood)
+#true
+puts (iLikeFood and iEatRocks)
 #false
+puts (iAmPurple and iLikeFood)
+#false
+puts (iAmPurple and iEatRocks)
+false
 puts (iAmChris  or iLikeFood)
 #true
 puts (iLikeFood or iEatRocks)
