@@ -1,10 +1,27 @@
-command = ' '
-while command != 'bye'
-  command = gets.chomp
-  puts command
-end
+#or in ruby isn't one or the other, its saying that one of the things being evaluated
+#is true
 
-puts 'come again soon!'
+iAmChris  = true
+iAmPurple = false
+iLikeFood = true
+iEatRocks = false
+
+puts (iAmChris  and iLikeFood)
+#true
+puts (iLikeFood and iEatRocks)
+#false
+puts (iAmPurple and iLikeFood)
+#false
+puts (iAmPurple and iEatRocks)
+#false
+
+# command = ' '
+# while command != 'bye'
+#   command = gets.chomp
+#   puts command
+# end
+#
+# puts 'come again soon!'
 
 
 # puts 1 > 2
