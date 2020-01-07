@@ -6,15 +6,26 @@ iAmPurple = false
 iLikeFood = true
 iEatRocks = false
 
-puts (iAmChris  and iLikeFood)
+# puts (iAmChris  and iLikeFood)
+# #true
+# puts (iLikeFood and iEatRocks)
+# #false
+# puts (iAmPurple and iLikeFood)
+# #false
+# puts (iAmPurple and iEatRocks)
+#false
+puts (iAmChris  or iLikeFood)
 #true
-puts (iLikeFood and iEatRocks)
+puts (iLikeFood or iEatRocks)
+#true
+puts (iAmPurple or iLikeFood)
+#true
+puts (iAmPurple or iEatRocks)
 #false
-puts (iAmPurple and iLikeFood)
+puts (not iAmPurple)
+#true
+puts (not iAmChris)
 #false
-puts (iAmPurple and iEatRocks)
-#false
-
 # command = ' '
 # while command != 'bye'
 #   command = gets.chomp
