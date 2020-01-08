@@ -6,18 +6,18 @@
 # Hint: Don't forget about chomp! 'BYE'with an Enter is not the same as 'BYE' without one!
 # Hint 2: Try to think about what parts of your program should happen over and over again. All of those should be in your while loop.
 puts 'Say something to your grandma!'
-reply = ">>" + gets.chomp
+reply = gets.chomp
 
-def downcase_reply
-  while reply == reply.downcase
-  grandma_one = "HUH?! SPEAK UP, SONNY!"
-  puts grandma_one
-  reply = gets.chomp
-    if reply == reply.upcase
-      puts "OH, OK, BYE!"
-    end
+
+while reply == reply.downcase
+grandma_one = "HUH?! SPEAK UP, SONNY!"
+puts grandma_one
+reply = gets.chomp
+  if reply == reply.upcase
+    puts "OH, OK, BYE!"
   end
 end
+
 
 while reply == reply.upcase
   grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
