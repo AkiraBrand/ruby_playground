@@ -19,7 +19,7 @@ end
 while reply == reply.upcase && reply != "BYE"
   grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
   puts grandma_two
-  reply = ">>" + gets.chomp
+  reply = gets.chomp
 end
 
 if reply == "BYE"
