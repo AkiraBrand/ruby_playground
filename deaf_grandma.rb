@@ -7,22 +7,23 @@
 # Hint 2: Try to think about what parts of your program should happen over and over again. All of those should be in your while loop.
 puts 'Say something to your grandma!'
 reply = gets.chomp
+bye_counter = 0
 
 
 while reply == reply.downcase
-grandma_one = "HUH?! SPEAK UP, SONNY!"
-puts grandma_one
-reply = gets.chomp
-  if reply == reply.upcase
-    puts "OH, OK, BYE!"
-  end
+  grandma_one = "HUH?! SPEAK UP, SONNY!"
+  puts grandma_one
+  reply = gets.chomp
 end
 
 
-while reply == reply.upcase
+while reply == reply.upcase && reply != "BYE"
   grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
   puts grandma_two
   reply = ">>" + gets.chomp
-  downcase_reply
+end
+
+while reply == "BYE"
+  puts "GOODBYE, MY DEAR GRANDCHILD!"
   break
 end
