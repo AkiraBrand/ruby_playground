@@ -6,9 +6,8 @@
 # Hint: Don't forget about chomp! 'BYE'with an Enter is not the same as 'BYE' without one!
 # Hint 2: Try to think about what parts of your program should happen over and over again. All of those should be in your while loop.
 puts 'Say something to your grandma!'
-reply = gets.chomp
-bye_counter = 0
 
+reply = gets.chomp
 
 while reply == reply.downcase
   grandma_one = "HUH?! SPEAK UP, SONNY!"
@@ -23,7 +22,6 @@ while reply == reply.upcase && reply != "BYE"
   reply = ">>" + gets.chomp
 end
 
-while reply == "BYE"
+if reply == "BYE"
   puts "GOODBYE, MY DEAR GRANDCHILD!"
-  break
 end
