@@ -9,28 +9,30 @@ puts 'Say something to your grandma!'
 reply = gets.chomp
 reply_times = []
 
-while reply == reply.downcase
+if reply == reply.downcase
   grandma_one = "HUH?! SPEAK UP, SONNY!"
   puts grandma_one
   reply = gets.chomp
 end
 
 
-while reply == reply.upcase && reply != "BYE"
+if reply == reply.upcase && reply != "BYE"
   grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
   puts grandma_two
   reply = gets.chomp
 end
 
-if reply == "BYE"
-  reply_times << reply
-  while reply_times.count <= 3
+while reply == "BYE"
+  #if the times i've said bye is three, break out of the program
+  # reply_times << reply
+  # # require 'pry'; binding.pry
+  # while reply_times.count <= 4
     puts "..."
-    if reply_times.count > 3
-      puts "OK FINE BYE"
-    end
+    reply = gets.chomp
   end
-end
+  #  if reply_times.count > 3
+  #     puts "OK FINE BYE"
+  # end
 
 
 #i could say that if user input elements x in an array [0..2] are all equal, then exit the program
