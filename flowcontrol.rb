@@ -3,6 +3,14 @@ name = gets.chomp
 puts 'Hello, ' + name + '.'
 if name == "Regina"
   puts "You can't sit with us!"
+else
+  puts "Do you want to go sit with Regina?"
+  reply = gets.chomp
+  if reply == "no"
+    puts "Whatever, loser"
+  else
+    puts "What are you doing?! You can't sit with us!!"
+  end
 end
 
 # #or in ruby isn't one or the other, its saying that one of the things being evaluated
