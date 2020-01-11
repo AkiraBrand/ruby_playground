@@ -16,16 +16,17 @@ if start_year.to_i != true
 end
 
 puts "what year do you want to end in?"
-if end_year.to_i !=true
+if end_year.to_i != true
   puts "please only put numbers in"
   end_year = gets.chomp
 end
 
 end_year = gets.chomp
+
 #get all the years between those two
 
   #put those two inputs as the start and end point of a ruby counter?
 
 #divide those in between years and then inputs by four. if the remainder is zero, classify it as a leap year.
 #if a number is is divisible by 4 and 100, divide it by 400. if the remainder is zero, classify it as a leap year
-#return a printed list of the leap years 
+#return a printed list of the leap years

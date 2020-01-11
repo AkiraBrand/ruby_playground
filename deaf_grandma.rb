@@ -23,13 +23,19 @@ if reply == reply.upcase && reply != "BYE"
 end
 
 while reply == "BYE"
+  reply_times << reply
   #if the times i've said bye is three, break out of the program
   # reply_times << reply
   # # require 'pry'; binding.pry
   # while reply_times.count <= 4
     puts "..."
-    reply = gets.chomp
+    if reply_times.count == 3
+      puts "ok, bye"
+      break
+    end
   end
+
+
   #  if reply_times.count > 3
   #     puts "OK FINE BYE"
   # end
