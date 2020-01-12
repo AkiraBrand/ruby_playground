@@ -4,44 +4,11 @@
 # Make sure to test your program: if you shout BYE three times, but not in a row,
 # you should still be talking to grandma.
 #
-puts 'Say something to your grandma!'
-
+puts "Say something!"
 reply = gets.chomp
-reply_times = 0
 
-# if reply == reply.downcase
-#   grandma_one = "HUH?! SPEAK UP, SONNY!"
-#   puts grandma_one
-#   reply = gets.chomp
-# end
-
-while reply != "BYE"
-  reply = gets.chomp
+if reply.downcase == true
+  puts "WHAT? SPEAK UP"
+elsif reply.downcase == false
+  puts "NO NOT SINCE " + (rand(1956...1987).to_s) + '.'
 end
-
-if reply == reply.upcase && reply != "BYE"
-  grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
-  puts grandma_two
-  reply = gets.chomp
-else reply == reply.downcase
-  grandma_one = "HUH?! SPEAK UP, SONNY!"
-  puts grandma_one
-  reply = gets.chomp
-end
-
-if reply == "BYE"
-  reply_times + 1
-end
-
-if reply_times == 3
-  puts "ok, bye"
-end
-
-
-  #  if reply_times.count > 3
-  #     puts "OK FINE BYE"
-  # end
-
-
-#i could say that if user input elements x in an array [0..2] are all equal, then exit the program
-#else continue
