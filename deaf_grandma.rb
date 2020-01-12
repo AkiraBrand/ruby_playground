@@ -7,7 +7,7 @@
 puts 'Say something to your grandma!'
 
 reply = gets.chomp
-reply_times = []
+reply_times = 0
 
 # if reply == reply.downcase
 #   grandma_one = "HUH?! SPEAK UP, SONNY!"
@@ -15,28 +15,27 @@ reply_times = []
 #   reply = gets.chomp
 # end
 
-def upcase(reply)
-  if reply == reply.upcase && reply != "BYE"
-    grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
-    puts grandma_two
-    reply = gets.chomp
-  elsif reply == reply.downcase
-    grandma_one = "HUH?! SPEAK UP, SONNY!"
-    puts grandma_one
-    reply = gets.chomp
-  end
+while reply != "BYE"
+  reply = gets.chomp
+end
+
+if reply == reply.upcase && reply != "BYE"
+  grandma_two = "NO, NOT SINCE " + (rand(1930..1950)).to_s + "!"
+  puts grandma_two
+  reply = gets.chomp
+else reply == reply.downcase
+  grandma_one = "HUH?! SPEAK UP, SONNY!"
+  puts grandma_one
+  reply = gets.chomp
 end
 
 if reply == "BYE"
-  reply_times << reply
-    if reply_times.count == 3
-      puts "ok, bye"
-    else
-      puts "oh no, you're not leaving yet!"
-      reply = gets.chomp
-      upcase(reply)
-    end
-  end
+  reply_times + 1
+end
+
+if reply_times == 3
+  puts "ok, bye"
+end
 
 
   #  if reply_times.count > 3
