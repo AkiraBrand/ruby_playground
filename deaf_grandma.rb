@@ -8,7 +8,7 @@ puts "Say something!"
 reply = gets.chomp
 
 if reply.downcase == true
-  puts "WHAT? SPEAK UP"
-elsif reply.downcase == false
-  puts "NO NOT SINCE " + (rand(1956...1987).to_s) + '.'
+  p "WHAT? SPEAK UP"
+# elsif reply.downcase == false
+#   puts "NO NOT SINCE " + (rand(1956...1987).to_s) + '.'
 end

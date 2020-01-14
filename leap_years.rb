@@ -10,18 +10,35 @@
 puts "what year do you want to start in?"
 
 start_year = gets.chomp
-if start_year.to_i != true
-  puts "please only put numbers in"
-  start_year = gets.chomp
-end
+# if start_year.to_i != true
+#   puts "please only put numbers in"
+#   start_year = gets.chomp
+# end
+
 
 puts "what year do you want to end in?"
-if end_year.to_i != true
-  puts "please only put numbers in"
-  end_year = gets.chomp
+end_year = gets.chomp
+# if end_year.to_i != true
+#   puts "please only put numbers in"
+#   end_year = gets.chomp
+# end
+
+full_years = (start_year.to_i..end_year.to_i)
+print full_years
+full_years.map do |year|
+  leaps = []
+  if year % 4 == 0 && years % 100 != 0
+    leaps << year
+  end
+  print leaps
 end
 
-end_year = gets.chomp
+
+# if start_year % 4 == 0
+#   puts start_year + ' is a leap year.'
+# else
+#   puts start_year + ' is not a leap year.'
+# end
 
 #get all the years between those two
 
