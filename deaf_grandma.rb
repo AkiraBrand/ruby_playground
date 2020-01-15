@@ -4,11 +4,15 @@
 # Make sure to test your program: if you shout BYE three times, but not in a row,
 # you should still be talking to grandma.
 #
-puts "Say something!"
-reply = gets.chomp
+puts "Say something to grandma!"
 
-if reply.downcase == true
-  p "WHAT? SPEAK UP"
-# elsif reply.downcase == false
-#   puts "NO NOT SINCE " + (rand(1956...1987).to_s) + '.'
+input = gets.chomp
+
+until input == input.upcase
+  puts "HUH? SPEAK UP SONNY!"
+  input = gets.chomp
+end
+
+if input == input.upcase
+  puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
 end
