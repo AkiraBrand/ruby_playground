@@ -17,3 +17,15 @@ while input == input.upcase && input != "BYE"
   puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
   input = gets.chomp
 end
+
+if input == "BYE"
+  input_array = []
+  input_array << input
+  puts "..."
+
+  until input_array.count() == 3 do 
+    puts "no not yet"
+    input = gets.chomp
+  end
+
+end
