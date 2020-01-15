@@ -13,6 +13,11 @@ until input == input.upcase
   input = gets.chomp
 end
 
-if input == input.upcase
+while input == input.upcase && input != "BYE"
   puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
+  input = gets.chomp
+end
+
+if input == "BYE"
+  puts "OK BYE DEAR"
 end
