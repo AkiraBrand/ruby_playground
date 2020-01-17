@@ -3,13 +3,26 @@
 # Change your previous program so that you have to shout BYE three times in a row.
 # Make sure to test your program: if you shout BYE three times, but not in a row,
 # you should still be talking to grandma.
-#
+
+# puts a message to user
+# set a "bye" counter to 0
+# #
+# # loop until the bye counter is 3
+# #   ask the user for input
+# #   if input is all caps ...
+# #   if input is "BYE" ...
+# #   otherwise ...
+
+require 'pry'
+
 puts "Say something to grandma!"
 
 input = gets.chomp
 
 until input == input.upcase
+  binding.pry
   puts "HUH? SPEAK UP SONNY!"
+  binding.pry
   input = gets.chomp
 end
 
@@ -23,7 +36,7 @@ if input == "BYE"
   input_array << input
   puts "..."
 
-  until input_array.count() == 3 do 
+  until input_array.count() == 3 do
     puts "no not yet"
     input = gets.chomp
   end
