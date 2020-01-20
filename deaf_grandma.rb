@@ -24,7 +24,7 @@ until bye_counter == 3
     puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
   elsif input == "BYE"
       bye_counter += 1
-  else
+  elsif input == input.downcase
       puts "HUH? SPEAK UP SONNY!"
   end
 end
