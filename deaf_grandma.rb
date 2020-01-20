@@ -16,29 +16,43 @@
 require 'pry'
 
 puts "Say something to grandma!"
+bye_counter = 0
 
-input = gets.chomp
-
-until input == input.upcase
-  binding.pry
-  puts "HUH? SPEAK UP SONNY!"
-  binding.pry
+until bye_counter == 3
   input = gets.chomp
-end
-
-while input == input.upcase && input != "BYE"
-  puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
-  input = gets.chomp
-end
-
-if input == "BYE"
-  input_array = []
-  input_array << input
-  puts "..."
-
-  until input_array.count() == 3 do
-    puts "no not yet"
-    input = gets.chomp
+  if input == input.capitalize
+    puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
+  elsif input == "BYE"
+      bye_counter += 1
+  else
+      puts "HUH? SPEAK UP SONNY!"
   end
-
 end
+
+#
+#
+# input = gets.chomp
+#
+# until input == input.upcase
+#   binding.pry
+#   puts "HUH? SPEAK UP SONNY!"
+#   binding.pry
+#   input = gets.chomp
+# end
+#
+# while input == input.upcase && input != "BYE"
+#   puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
+#   input = gets.chomp
+# end
+#
+# if input == "BYE"
+#   input_array = []
+#   input_array << input
+#   puts "..."
+#
+#   until input_array.count() == 3 do
+#     puts "no not yet"
+#     input = gets.chomp
+#   end
+#
+# end
