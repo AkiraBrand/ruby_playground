@@ -1,15 +1,6 @@
 # Make sure to test your program: if you shout BYE three times, but not in a row,
 # you should still be talking to grandma.
 
-# puts a message to user
-# set a "bye" counter to 0
-# #
-# # loop until the bye counter is 3
-# #   ask the user for input
-# #   if input is all caps ...
-# #   if input is "BYE" ...
-# #   otherwise ...
-
 require 'pry'
 
 puts "Say something to grandma!"
@@ -25,5 +16,3 @@ until bye_counter == 3
     puts "HUH? SPEAK UP SONNY!"
   end
 end
-
-#co
