@@ -1,6 +1,3 @@
-# Extend your Deaf Grandma program: What if grandma doesn't want you to leave?
-# When you shout BYE, she could pretend not to hear you.
-# Change your previous program so that you have to shout BYE three times in a row.
 # Make sure to test your program: if you shout BYE three times, but not in a row,
 # you should still be talking to grandma.
 
@@ -29,30 +26,4 @@ until bye_counter == 3
   end
 end
 
-#
-#
-# input = gets.chomp
-#
-# until input == input.upcase
-#   binding.pry
-#   puts "HUH? SPEAK UP SONNY!"
-#   binding.pry
-#   input = gets.chomp
-# end
-#
-# while input == input.upcase && input != "BYE"
-#   puts "NO, NOT SINCE " + (rand(1965..1999)).to_s + "!"
-#   input = gets.chomp
-# end
-#
-# if input == "BYE"
-#   input_array = []
-#   input_array << input
-#   puts "..."
-#
-#   until input_array.count() == 3 do
-#     puts "no not yet"
-#     input = gets.chomp
-#   end
-#
-# end
+#co
